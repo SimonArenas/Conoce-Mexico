@@ -1,0 +1,24 @@
+.section-book {
+    padding: 15rem 0;
+    background-image: linear-gradient(69.7deg, rgba(216, 81, 82, 1) 40%, rgba(154, 27, 69, 1) 100.1%);
+}
+
+.book {
+    background-image: linear-gradient(
+            105deg,
+            rgba(rgb(243, 243, 243), 0.9) 0%,
+            rgba(rgb(243, 243, 243), 0.9) 50%,
+            transparent 50%
+        ),
+        url(../assets/rocas.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(black, 0.2);
+    height: 50rem;
+
+    &__form {
+        width: 50%;
+        padding: 6rem;
+    }
+}

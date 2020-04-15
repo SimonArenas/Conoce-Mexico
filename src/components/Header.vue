@@ -12,7 +12,7 @@
           >
           <span class="heading__primary--sub">Viajes en grupo por México</span>
         </div>
-        <a class="btn heading__button" href="#">Ver tours</a>
+        <a class="btn heading__button" href="#section-tours">Ver tours</a>
       </div>
     </header>
   </div>

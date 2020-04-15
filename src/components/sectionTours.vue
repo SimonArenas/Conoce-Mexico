@@ -1,5 +1,5 @@
 <template>
-  <section class="section-tours">
+  <section class="section-tours" id="section-tours">
     <div class="u-text-center u-mb-8">
       <h2 class="heading-secondary">
         Viajes disponibles
@@ -32,7 +32,7 @@
                 <p class="card__price-text">Precio</p>
                 <p class="card__price-number">$3,499</p>
               </div>
-              <a class="btn heading__button" href="#">Reservar</a>
+              <a class="btn heading__button" href="#popup">Reservar</a>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@
                 <p class="card__price-text">Precio</p>
                 <p class="card__price-number">$3,999</p>
               </div>
-              <a class="btn heading__button" href="#">Reservar</a>
+              <a class="btn heading__button" href="#popup">Reservar</a>
             </div>
           </div>
         </div>
@@ -94,7 +94,7 @@
                 <p class="card__price-text">Precio</p>
                 <p class="card__price-number">$6,499</p>
               </div>
-              <a class="btn heading__button" href="#">Reservar</a>
+              <a class="btn heading__button" href="#popup">Reservar</a>
             </div>
           </div>
         </div>
@@ -104,13 +104,12 @@
     <div class="u-text-center">
       <a class="btn btn-red" href="#">Ver más tours</a>
     </div>
-    
   </section>
 </template>
 
 <script>
 export default {
-  name: "sectionTours"
+  name: "sectionTours",
 };
 </script>
 

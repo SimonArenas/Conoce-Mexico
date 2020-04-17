@@ -6,6 +6,11 @@
     background-position: center;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+
+    @include responsive(phone) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+    }
 }
 .logo__container {
     position: absolute;
@@ -14,8 +19,13 @@
 }
 .logo {
     font-family: "Foxy";
+    font-size: 3rem;
     letter-spacing: 0.2rem;
     color: white;
+
+    @include responsive(phone) {
+        font-size: 4rem;
+    }
 }
 
 .heading {
@@ -33,6 +43,7 @@
         backface-visibility: hidden;
         text-transform: uppercase;
         margin-bottom: 4rem;
+
         &--main {
             @include moveInLeft;
             animation-name: moveInLeft;
@@ -44,6 +55,15 @@
             font-size: 5rem;
             font-weight: 400;
             letter-spacing: 0.5rem;
+
+            @include responsive(phone) {
+                letter-spacing: 0.2rem;
+                font-size: 5rem;
+            }
+            @include responsive(phone-sm) {
+                letter-spacing: 0.2rem;
+                font-size: 6rem;
+            }
         }
         &--sub {
             @include moveInRight;
@@ -62,6 +82,9 @@
         color: $m-gray;
         border-radius: 10rem;
         border: none;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%,-50%);
         &:hover {
             transform: translateY(-0.3rem);
             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
@@ -69,6 +92,10 @@
         &:active {
             transform: translateY(-0.1rem);
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        }
+
+        @include responsive(phone) {
+            font-size: 3rem;
         }
     }
 }

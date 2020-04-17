@@ -10,6 +10,13 @@
     backface-visibility: hidden;
     // opacity: .90;
 
+    @include responsive(tab-port) {
+        width: 90%;
+    }
+    @include responsive(phone) {
+        width: 100%;
+    }
+
     &__shape {
         width: 15rem;
         height: 15rem;
@@ -29,7 +36,6 @@
         z-index: 10;
         transition: all 0.5s;
         backface-visibility: hidden;
-
     }
     &__caption {
         z-index: 20;
@@ -44,18 +50,26 @@
         opacity: 0;
         transition: all 0.5s;
         backface-visibility: hidden;
-
     }
-    &:hover &__caption {
-        opacity: 1;
-        transform: translate(-50%, -50%);
+
+    &:focus &__img {
+        outline: none;
     }
     &:hover &__img {
         transform: scale(1);
         filter: blur(3px) brightness(80%);
     }
 
-    &__title{
+    &__title {
         margin-bottom: 1.5rem;
+        @include responsive(phone) {
+            font-size: 2.5rem;
+        }
+    }
+
+    &__text-paragraph {
+        @include responsive(phone) {
+            font-size: 2rem;
+        }
     }
 }

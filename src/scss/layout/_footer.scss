@@ -3,6 +3,10 @@
     padding: 10rem 0;
     font-size: 1.4rem;
 
+    @include responsive(tab-port){
+        padding: 8rem 0;
+    }
+
     &__logo-box {
         text-align: center;
         margin-bottom: 8rem;
@@ -17,6 +21,11 @@
         border-top: 1px solid $m-gray;
         padding-top: 2rem;
         display: inline-block;
+
+        @include responsive(tab-port){
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__list {
@@ -44,6 +53,13 @@
             box-shadow: 0 1rem 2rem rgba(black, 0.4);
             transform: rotate(5deg) scale(1.3);
         }
+
+        @include responsive(tab-port){
+            font-size: 1.8rem;
+        }
+        @include responsive(phone){
+            font-size: 2.3rem;
+        }
     }
 
     &__description {
@@ -52,5 +68,9 @@
         display: inline-block;
         color: $l-gray;
         font-size: 1.8rem;
+
+        @include responsive(phone){
+            font-size: 2.8rem;
+        }
     }
 }

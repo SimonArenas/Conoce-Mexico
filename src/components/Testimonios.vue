@@ -24,7 +24,7 @@
           <h3 class="story__title heading-tertitary">
             El mejor fin de semana con mi familia
           </h3>
-          <p>
+          <p class="story__text-paragraph">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure vel,
             necessitatibus numquam laborum deleniti deserunt temporibus? Eum
             enim deleniti, eaque laudantium atque animi nobis? Impedit facere
@@ -44,7 +44,7 @@
           <h3 class="story__title heading-tertitary">
             Nunca olvidaré este viaje
           </h3>
-          <p>
+          <p  class="story__text-paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nemo
             eveniet ipsam laborum dolorum? Earum cumque sunt assumenda
             consequuntur, velit dolore eius? Harum placeat repudiandae incidunt,

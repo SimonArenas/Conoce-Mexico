@@ -1,5 +1,4 @@
 .feature-box {
-    
     background-color: rgba(252, 252, 252, 1);
     font-size: 1.5rem;
     padding: 2.5rem;
@@ -14,11 +13,21 @@
         background-image: linear-gradient(to bottom right, #eb4e4b, #a11412);
         -webkit-background-clip: text;
         color: transparent;
+
+        @include responsive(tab-port) {
+            max-width: 50%;
+        }
     }
 
     &__text {
         margin-top: 0.5rem;
         font-size: 1.6rem;
+        @include responsive(tab-port) {
+            font-size: 2.6rem;
+        }
+        @include responsive(phone) {
+            font-size: 3rem;
+        }
     }
 
     &:hover {

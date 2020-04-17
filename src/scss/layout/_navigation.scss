@@ -15,6 +15,17 @@
         box-shadow: 0 1rem 3rem rgba(black, 0.2);
         text-align: center;
         cursor: pointer;
+
+        @include responsive(tab-port) {
+            top: 4rem;
+            right: 4rem;
+        }
+        @include responsive(phone) {
+            height: 9rem;
+            width: 9rem;
+            top: 3rem;
+            right: 3rem;
+        }
     }
     &__background {
         height: 6rem;
@@ -33,6 +44,16 @@
         transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
         backface-visibility: hidden;
 
+        @include responsive(tab-port) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+        @include responsive(phone) {
+            height: 8rem;
+            width: 8rem;
+            top: 3.5rem;
+            right: 3.5rem;
+        }
     }
     &__nav {
         height: 100vh;
@@ -45,7 +66,6 @@
         width: 0;
         transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         backface-visibility: hidden;
-
     }
     &__list {
         position: absolute;
@@ -74,6 +94,12 @@
             transition: all 0.4s;
             border-radius: 0.2rem;
             backface-visibility: hidden;
+            @include responsive(tab-port) {
+                font-size: 2.5rem;
+            }
+            @include responsive(phone) {
+                font-size: 4rem;
+            }
         }
 
         &:hover,
@@ -104,6 +130,14 @@
             height: 2px;
             background-color: $d-gray;
             display: inline-block;
+
+            @include responsive(phone) {
+                width: 4rem;
+                height: 2px;
+            }
+        }
+        @include responsive(phone) {
+            margin-top: 4.4rem;
         }
         &::before,
         &::after {

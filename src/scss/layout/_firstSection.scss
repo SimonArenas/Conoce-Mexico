@@ -3,6 +3,17 @@
     background-color: rgb(252, 252, 252);
     padding: 20rem 0 20rem 0;
     margin-top: -20vh;
+
+    @include responsive(tab-port) {
+        padding: 20rem 0 20rem 0;
+    }
+    @include responsive(phone) {
+        padding: 35rem 0 20rem 0;
+    }
+
+    @include responsive(phone-sm) {
+        padding: 45rem 0 20rem 0;
+    }
 }
 
 .heading-secondary {
@@ -16,16 +27,34 @@
     // background-image: linear-gradient(to right, $m-red, $d-red);
     // -webkit-background-clip: text;
     // color: transparent;
+    @include responsive(tab-port) {
+        font-size: 3rem;
+    }
+    @include responsive(phone) {
+        font-size: 3.5rem;
+        padding: 0 4rem;
+    }
+    @include responsive(phone-sm) {
+        font-size: 4rem;
+    }
 }
 .heading-tertitary {
-     font-size: 1.6rem;
+    font-size: 1.6rem;
     font-weight: 800;
     text-transform: uppercase;
+    @include responsive(tab-port) {
+        font-size: 3rem;
+    }
 }
 
 .paragraph {
     font-size: 1.6rem;
     &:not(:last-child) {
         margin-bottom: 3rem;
+    }
+    @include responsive(tab-port) {
+        font-size: 2.6rem;
+
+        padding: -1rem 0;
     }
 }

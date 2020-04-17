@@ -3,7 +3,7 @@
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 10px 30px 6px 30px;
+    padding: 1rem 3rem 0.6rem 3rem;
     display: inline-block;
     transition: all 0.2s;
     // font-size: 1.2rem;
@@ -17,9 +17,14 @@
         display: inline-block;
         text-decoration: none;
         border-bottom: 1px solid $d-red;
-        padding: 6px;
+        padding: 0.6rem;
         font-weight: 600;
         transition: all 0.2s;
+
+        @include responsive(tab-port) {
+            font-size: 2.6rem;
+            margin-bottom: 10rem;
+        }
     }
     &:hover {
         background-color: $m-red;
@@ -33,16 +38,22 @@
     }
 }
 
-
 .btn-red {
     font-size: 1.5rem;
-    padding: 12px 30px 12px 30px;
+    padding: 1.2rem 3rem 1.2rem 3rem;
 
     margin-top: -2rem;
     background-color: $m-red;
     color: white;
     border-radius: 10rem;
     border: none;
+
+    @include responsive(tab-port) {
+        font-size: 2rem;
+    }
+    @include responsive(phone) {
+        font-size: 3rem;
+    }
     &:hover {
         transform: translateY(-0.3rem);
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);

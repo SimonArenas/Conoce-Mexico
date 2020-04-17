@@ -15,6 +15,11 @@
         display: block;
         transition: all 0.3s;
 
+        @include responsive(tab-port) {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
+
         &:focus {
             outline: none;
             box-shadow: 0 1rem 2rem rgba(black, 0.1);
@@ -36,6 +41,9 @@
         margin-top: 0.7rem;
         display: block;
         transition: all 0.3s;
+        @include responsive(tab-port) {
+            font-size: 1.7rem;
+        }
     }
 
     &__input:placeholder-shown + &__label {
@@ -51,12 +59,20 @@
     &__radio-group {
         width: 50%;
         display: inline-block;
+
+        @include responsive(tab-port) {
+            width: 100%;
+            margin-bottom: 1rem;
+        }
     }
     &__radio-label {
         font-size: 1.2rem;
         cursor: pointer;
         position: relative;
         padding-left: 4rem;
+        @include responsive(tab-port) {
+            font-size: 2rem;
+        }
     }
 
     &__radio-button {
@@ -68,6 +84,10 @@
         position: absolute;
         left: 0;
         top: -0.9rem;
+        @include responsive(tab-port) {
+            border: 3px solid $m-red;
+
+        }
 
         &::after {
             content: "";
@@ -82,6 +102,7 @@
             background-color: $m-red;
             opacity: 0;
             transition: opacity 0.2s;
+            
         }
     }
     &__radio-input:checked ~ &__radio-label &__radio-button::after {

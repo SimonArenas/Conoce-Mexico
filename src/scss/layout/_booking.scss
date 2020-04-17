@@ -15,10 +15,31 @@
     background-position: center;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba(black, 0.2);
-    height: 50rem;
+
+    @include responsive(tab-land) {
+        background-image: linear-gradient(
+                105deg,
+                rgba(rgb(243, 243, 243), 0.9) 0%,
+                rgba(rgb(243, 243, 243), 0.9) 70%,
+                transparent 70%
+            ),
+            url(../assets/rocas.jpg);
+    }
+    @include responsive(tab-port) {
+        background-image: linear-gradient(
+                to right,
+                rgba(rgb(243, 243, 243), 0.9) 0%,
+                rgba(rgb(243, 243, 243), 0.9) 100%
+            ),
+            url(../assets/rocas.jpg);
+    }
 
     &__form {
         width: 50%;
         padding: 6rem;
+
+        @include responsive(tab-port) {
+            width: 100%;
+        }
     }
 }

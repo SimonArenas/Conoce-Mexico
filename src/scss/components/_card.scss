@@ -1,9 +1,15 @@
 .card {
-    max-width: 30rem;
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
     height: 55rem;
+
+    @include responsive(tab-port) {
+        height: 55rem;
+    }
+    @include responsive(phone) {
+        height: 70rem;
+    }
 
     &__side {
         height: inherit;
@@ -48,6 +54,12 @@
         background-position: center;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 83%, 0% 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+        @include responsive(tab-port) {
+            height: 20rem;
+        }
+        @include responsive(phone) {
+            height: 30rem;
+        }
 
         &--1 {
             background-image: url(../assets/playa.jpg);
@@ -57,9 +69,10 @@
             background-position: bottom;
         }
         &--3 {
-            
             background-image: url(../assets/bacalar.jpg);
-
+            @include responsive(tab-port) {
+                background-position: 100% 70%;
+            }
         }
     }
     &__heading {
@@ -77,6 +90,13 @@
         padding: 1rem 1.5rem;
         box-decoration-break: clone;
         -webkit-box-decoration-break: clone;
+
+        @include responsive(tab-port) {
+            font-size: 3rem;
+        }
+        @include responsive(phone) {
+            font-size: 4rem;
+        }
         &--1 {
             background-image: linear-gradient(120deg, #a1c4fda6 0%, #c2e9fba6 100%);
         }
@@ -101,6 +121,9 @@
                 &:not(:last-child) {
                     border-bottom: 1px solid #eee;
                 }
+                @include responsive(phone) {
+                    font-size: 2.5rem;
+                }
             }
         }
     }
@@ -120,9 +143,15 @@
     &__price-text {
         font-size: 1.4rem;
         text-transform: uppercase;
+        @include responsive(tab-port) {
+            font-size: 4rem;
+        }
     }
     &__price-number {
         font-size: 4rem;
         font-weight: 100;
+        @include responsive(tab-port) {
+            font-size: 8rem;
+        }
     }
 }

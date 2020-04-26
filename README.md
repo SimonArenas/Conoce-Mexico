@@ -1,24 +1,11 @@
-# conoce_mexico
+# Conoce México
+Página web de una agencia de viajes. Creada con VueJS.
+Ver demo [aquí](https://conoce-mexico.netlify.app/ "aquí").
 
-## Project setup
-```
-npm install
-```
+![](https://i.imgur.com/UDjLp8W.gif)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+------------
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![](https://i.imgur.com/SSw6Mbd.jpg)

@@ -80,18 +80,20 @@
         </div>
         <div class="col-1-of-2">
           <div class="composition">
+  
+
             <img
-              src="../assets/image1.jpg"
+              src="../assets/1x/image1.jpg"
               alt="Photo 1"
               class="composition__photo composition__photo--p1"
             />
             <img
-              src="../assets/image3.jpg"
+              src="../assets/1x/image3.jpg"
               alt="Photo 3"
               class="composition__photo composition__photo--p2"
             />
             <img
-              src="../assets/image2.jpg"
+              src="../assets/1x/image2.jpg"
               alt="Photo 2"
               class="composition__photo composition__photo--p3"
             />
@@ -104,7 +106,7 @@
 
 <script>
 export default {
-  name: "firstSection"
+  name: "firstSection",
 };
 </script>
 

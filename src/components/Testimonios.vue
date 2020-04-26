@@ -2,8 +2,8 @@
   <section class="section-testimonios">
     <div class="bg-video">
       <video class="bg-video__content" autoplay muted loop>
-        <source src="../assets/video.mp4" type="video/mp4" />
-        <source src="../assets/video.webm" type="video/webm" />
+        <source src="../assets/1x/video.mp4" type="video/mp4" />
+        <source src="../assets/1x/video.webm" type="video/webm" />
         Tu navegador no soporta vídeos 😢
       </video>
     </div>
@@ -18,7 +18,7 @@
       <div class="story">
         <figure class="story__shape">
           <figcaption class="story__caption">Lizbeth</figcaption>
-          <img class="story__img" src="../assets/persona2.png" alt="" />
+          <img class="story__img" src="../assets/1x/persona2.png" alt="" />
         </figure>
         <div class="story__text">
           <h3 class="story__title heading-tertitary">
@@ -38,13 +38,13 @@
       <div class="story">
         <figure class="story__shape">
           <figcaption class="story__caption">Pedro</figcaption>
-          <img class="story__img" src="../assets/persona1.png" alt="" />
+          <img class="story__img" src="../assets/1x/persona1.png" alt="" />
         </figure>
         <div class="story__text">
           <h3 class="story__title heading-tertitary">
             Nunca olvidaré este viaje
           </h3>
-          <p  class="story__text-paragraph">
+          <p class="story__text-paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nemo
             eveniet ipsam laborum dolorum? Earum cumque sunt assumenda
             consequuntur, velit dolore eius? Harum placeat repudiandae incidunt,
@@ -63,7 +63,7 @@
 
 <script>
 export default {
-  name: "Testimonios"
+  name: "Testimonios",
 };
 </script>
 

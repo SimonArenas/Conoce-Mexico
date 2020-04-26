@@ -1,7 +1,7 @@
 .header {
     position: relative;
     height: 95vh;
-    background-image: linear-gradient(to bottom right, #00000098, #43434386), url(../assets/hero.jpg);
+    background-image: linear-gradient(to bottom right, #00000098, #43434386), url(../assets/1x/hero.jpg);
     background-size: cover;
     background-position: center;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
@@ -82,20 +82,26 @@
         color: $m-gray;
         border-radius: 10rem;
         border: none;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%,-50%);
+        
         &:hover {
-            transform: translateY(-0.3rem);
+            transform: translateY(-3px);
             box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
         }
         &:active {
-            transform: translateY(-0.1rem);
+            transform: translateY(-1px);
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+        }
+
+        @include responsive(tab-port) {
+            position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+            
         }
 
         @include responsive(phone) {
             font-size: 3rem;
+
         }
     }
 }

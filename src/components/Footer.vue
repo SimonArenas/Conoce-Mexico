@@ -1,7 +1,16 @@
 <template>
   <footer class="footer">
     <div class="footer__logo-box">
-      <img class="footer__logo" src="../assets/logo.png" alt="logo" />
+      <!-- <picture class="footer__logo">
+        <source srcset="../assets/1x/logo.png 1x, ../assets/logo.png 2x"
+          media="(max-width: 37.5em)">
+        <img srcset="../assets/1x/logo.png 1x, ../assets/logo.png 2x" alt="logo"
+      /></picture> -->
+      <img
+        class="footer__logo"
+        srcset="../assets/1x/logo.png 1x, ../assets/logo.png 2x"
+        alt="logo"
+      />
     </div>
     <div class="row">
       <div class="col-1-of-2">
